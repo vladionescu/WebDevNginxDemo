@@ -1,0 +1,4 @@
+index.html	--> /var/www/test/
+test.conf	--> /etc/nginx/conf.d/
+
+(Re)start nginx.
