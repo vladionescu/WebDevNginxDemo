@@ -1,0 +1,8 @@
+css/		--> /var/www/fractals/
+img/		--> /var/www/fractals/
+js/		--> /var/www/fractals/
+fractals.conf	--> /etc/nginx/conf.d/
+
+Disable all other sites by renaming any *.conf files in conf.d/ to *.off
+
+(Re)start nginx.
