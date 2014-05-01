@@ -1,0 +1,19 @@
+ghost/		--> /var/www/
+ghost.conf	--> /etc/nginx/conf.d/
+
+Run these commands to install Node.js
+-------------------------------------
+sudo yum install -y gcc-c++
+tar -xvzf node-v0.10.26.tar.gz
+cd node-v0.10.26/
+./configure
+make
+sudo make install
+cd ../ && rm -rf node-v0.10.26/
+
+Run these commands to install Ghost
+-----------------------------------
+cd /var/www/ghost/
+sudo `which npm` install --production
+sudo `which npm` start --production
+

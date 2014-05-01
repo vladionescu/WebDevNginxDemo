@@ -1,0 +1,4 @@
+index.html	--> /var/www/hello/
+hello.conf	--> /etc/nginx/conf.d/
+
+(Re)start nginx.
