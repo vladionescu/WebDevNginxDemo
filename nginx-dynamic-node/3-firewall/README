@@ -1,0 +1,13 @@
+Run (as sudo) iptables.sh to only allow web traffic from nginx-lb to reach this node.
+
+# sudo sh iptables.sh
+
+Make sure you understand the rules here.
+
+The first rule is there to set the default policy (if no rules match the connection) to accept everything, that way if the default policy happens to be deny everything then when you make your changes you won't be spontaneously locked out. :)
+
+The second rule clears any INPUT rules, to make sure we're working with a clean slate.
+
+The third rule allows only my nginx-lb's IP to connect to port 80.
+
+The fourth and final rule blocks everyone else from connecting on port 80.
