@@ -1,0 +1,6 @@
+ghost/		--> /var/www/
+ghost.conf	--> /etc/nginx/conf.d/
+
+Disable all other sites by renaming any *.conf files in conf.d/ to *.off
+
+(Re)start nginx.
